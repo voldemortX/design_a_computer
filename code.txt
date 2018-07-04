@@ -1,0 +1,102 @@
+MAIN:
+     // 100ms
+     jal WAIT;
+     sll $zero, $zero, 0;
+
+     // get keys' status
+     lw	$s0, 0xfff4($zero);  
+     andi $s1, $s0, 16;
+     bne $s1, $zero, RIGHT;
+     andi $s1, $s0, 8;
+     bne $s1, $zero, LEFT;   
+     andi $s1, $s0, 2;
+     bne $s1, $zero, UP;
+     andi $s1, $s0, 1;
+     bne $s1, $zero, CENTER;
+
+     // move ball and keep scores
+     bne $t5, $zero, ELSE;
+     	 bne $t6, $zero, ELSE;
+     	     addi $t4, $t4, -1;
+	     bne $t4, $zero, ELSE;
+	         addi $t2, $t2, 1;
+                 jal NEXT;
+                 sll $zero, $zero, 0;
+	     ELSE;
+         ELSE:
+             addi $t4, $t4, 1;
+	     xori $s1, $t4, 9;
+	     bne $s1, $zero, ELSE;
+	         addi $t2, $t2, 1;
+		 jal NEXT;
+                 sll $zero, $zero, 0;
+	     ELSE;
+     ELSE;
+
+     j MAIN;
+
+
+WAIT:
+     addi $t0, $zero, 2500000;
+     NEXT:
+          addi $t0, $t0, -1;
+     	  bne $t0, $zero, NEXT;
+     jr $ra;
+     
+
+CENTER:
+     addi $t1, $zero, 0;  // left score
+     addi $t2, $zero, 0;  // right score
+     addi $t3, $zero, 0;  // game status(0: ongoing, 1: ended)
+     addi $t4, $zero, 1;  // ball position(1-8: left to right)
+     addi $t5, $zero, 1;  // ball flag(0: flying, 1: pending)
+     addi $t6, $zero, 1;  // 0: left-response, 1: right-response
+     jr $ra;
+
+
+LEFT:
+     xori $s1, $t4, 1;
+     or $s1, $s1, $t5;
+     or $s1, $s1, $t6;
+     bne $s1, $zero, ELSE;
+	 addi $t6, $zero, 1;
+     ELSE;
+     jr $ra;
+
+
+RIGHT:
+     xori $s1, $t4, 8;
+     or $s1, $s1, $t5;
+     xori $s2, $t6, 1;
+     or $s1, $s1, $s2;
+     bne $s1, $zero, ELSE;
+	 addi $t6, $zero, 0;
+     ELSE;
+     jr $ra;
+
+
+UP:
+     bne $t3, $zero, ELSE;
+         addi $t5, $zero, 0;
+     ELSE;
+     jr $ra;
+     
+
+NEXT:
+     // very interesting
+     addi $t5, $zero, 1;
+     add $s2, $t1, $t2;
+     srl $s1, $s2, 1;
+     andi $s1, $s1, 1;
+     bne $s1, $zero, ELSE;
+     	 addi $t6, $zero, 1;
+         addi $t4, $zero, 1;
+     ELSE:
+         addi $t6, $zero, 0;
+         addi $t4, $zero, 8;
+     
+     xori $s2, $s2, 12;
+     bne $s2, $zero, ELSE;
+         addi $t3, $zero, 1;
+     ELSE;
+     jr $ra;
