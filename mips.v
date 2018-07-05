@@ -28,6 +28,35 @@ module top #(parameter WIDTH = 32, REGBITS = 5)(
    // external memory for code and data
    exmemory #(WIDTH) exmem(clk, memwrite, adr, writedata, memdata);
    
+   // rom
+   /*ins_mem ip_rom (
+     .clka(clk),    // input wire clka
+     .ena(ena),      // input wire ena
+     .addra(addra),  // input wire [9 : 0] addra
+     .douta(douta)  // output wire [31 : 0] douta
+   );*/
+   
+   // ram
+   /*dat_mem your_instance_name (
+     .clka(clk),    // input wire clka
+     .ena(ena),      // input wire ena
+     .wea(wea),      // input wire [0 : 0] wea
+     .addra(adr[]),  // input wire [9 : 0] addra
+     .dina(dina),    // input wire [31 : 0] dina
+     .douta(douta)  // output wire [31 : 0] douta
+   )*/
+   
+   //clock?
+    /* clk_wiz_0 instance_name
+    (
+     // Clock out ports
+     .clk_out1(clk_out1),     // output clk_out1
+     // Status and control signals
+     .reset(reset), // input reset
+     .locked(locked),       // output locked
+    // Clock in ports
+     .clk_in1(clk));      // input clk_in1*/
+   
    // get left, right and ledCode
    // ?
    
@@ -77,10 +106,10 @@ module exmemory #(parameter WIDTH = 32)
    reg  [31:0] RAM [(1<<WIDTH-2)-1:0];
    wire [31:0] word;
 
-   initial
+   /*initial
       begin
          $readmemh("memfile.dat",RAM);
-      end
+      end*/
 
    // read and write bytes from 32-bit word
    always @(posedge clk)

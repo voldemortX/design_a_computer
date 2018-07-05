@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Jul  5 13:58:55 2018
+# Process ID: 15996
+# Current directory: D:/pingpong2/pingpong2.sim/mySim/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/pingpong2/pingpong2.sim/mySim/behav/xsim/webtalk.log
+# Journal file: D:/pingpong2/pingpong2.sim/mySim/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/sim_ram_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/sim_ram_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jul  5 13:59:00 2018. For additional details about this file, please refer to the WebTalk help file at D:/sw/vivado_pro/Vivado/2018.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul  5 13:59:00 2018...
