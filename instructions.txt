@@ -1,0 +1,13 @@
+jal
+jr
+sll
+lw
+sw
+andi
+bne
+xori
+j
+or
+srl
+add
+addi
