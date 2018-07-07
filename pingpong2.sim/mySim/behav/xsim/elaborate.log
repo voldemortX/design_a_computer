@@ -1,6 +1,6 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/sw/vivado_pro/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b5254c809de940d5877c7b07b112dcb7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot mux_t_behav xil_defaultlib.mux_t xil_defaultlib.glbl -log elaborate.log 
+Running: D:/sw/vivado_pro/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b5254c809de940d5877c7b07b112dcb7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot flop_t_behav xil_defaultlib.flop_t xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -8,9 +8,7 @@ Starting simulation data flow analysis
 WARNING: [XSIM 43-4100] "D:/pingpong2/pingpong2.sim/mySim/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.mux2
-Compiling module xil_defaultlib.mux3(width=5)
-Compiling module xil_defaultlib.mux4
-Compiling module xil_defaultlib.mux_t
+Compiling module xil_defaultlib.flopenr
+Compiling module xil_defaultlib.flop_t
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot mux_t_behav
+Built simulation snapshot flop_t_behav
