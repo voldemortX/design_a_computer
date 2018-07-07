@@ -1,12 +1,12 @@
 module alu(
     input [31:0] a,b,
-    input [2:0]  alucont,
+    input [2:0]  ALUCon,
     output reg [31:0] result,
     output reg zero
     );
     always @(*)
     begin
-        case(alucont)
+        case(ALUCon)
             3'b000: result = a + b;
             3'b001: result = a << b;
             3'b010: result = a >> b;
