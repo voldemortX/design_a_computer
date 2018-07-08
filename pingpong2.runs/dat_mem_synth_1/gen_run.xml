@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="dat_mem_synth_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1531053260">
   <File Type="PA-TCL" Name="dat_mem.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="dat_mem_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="dat_mem_reports.tcl"/>
   <File Type="RDS-RDS" Name="dat_mem.vds"/>
   <File Type="RDS-UTIL" Name="dat_mem_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="dat_mem_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="dat_mem.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="dat_mem_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="dat_mem_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dat_mem">
     <File Path="$PSRCDIR/sources_1/ip/dat_mem/dat_mem.xci">
       <FileInfo>

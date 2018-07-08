@@ -27,8 +27,7 @@ module datapath #(parameter width = 32, bits = 5)(
     );
     
     // internal wires
-    wire[width - 1: 0] MUX_PCsrc_out, PC_out;
-    wire PC_Pcen;    
+    wire[width - 1: 0] MUX_PCsrc_out, PC_out;   
     wire[width - 1: 0] MDR_out;
     wire[width - 1: 0] IR_out;
     wire[bits - 1: 0] MUX_RegDst_out;
@@ -42,9 +41,11 @@ module datapath #(parameter width = 32, bits = 5)(
     assign Logic_extend = {{26{1'b0}}, IR_out[10: 6]};
     assign Sign_extend = {{16{IR_out[15]}}, IR_out[15: 0]};
     assign PC_extend = {PC_out[31: 26], IR_out[25: 0]};
+    assign Op = IR_out[31: 26];
+    assign funct = IR_out[5: 0];
     
     // registers & ALU
-    flopenr #(width) PC(.clk(clk), .d(MUX_PCsrc_out), .q(PC_out), .en(PC_Pcen), .reset(reset));
+    flopenr #(width) PC(.clk(clk), .d(MUX_PCsrc_out), .q(PC_out), .en(Pcen), .reset(reset));
     flop #(width) MDR(.clk(clk), .d(ReadData), .q(MDR_out));
     flopen #(width) IR(.clk(clk), .d(ReadData), .q(IR_out), .en(IRWrite));
     regfile Registers(.clk(clk), .regwrite(RegWrite), .ra1(IR_out[25: 21]), .ra2(IR_out[20: 16]), .wa(MUX_RegDst_out), .wd(MUX_Regsrc_out), .rd1(Registers_Rd1), .rd2(Registers_Rd2));  // general registers

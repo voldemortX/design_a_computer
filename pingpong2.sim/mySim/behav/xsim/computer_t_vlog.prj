@@ -1,0 +1,24 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../pingpong2.srcs/sources_1/ip/ins_mem/sim/ins_mem.v" \
+"../../../../pingpong2.srcs/sources_1/ip/dat_mem/sim/dat_mem.v" \
+"../../../../pingpong2.srcs/sources_1/new/alu.v" \
+"../../../../pingpong2.srcs/sources_1/new/computer.v" \
+"../../../../pingpong2.srcs/sources_1/new/controller.v" \
+"../../../../pingpong2.srcs/sources_1/new/cpu.v" \
+"../../../../pingpong2.srcs/sources_1/new/datapath.v" \
+"../../../../pingpong2.srcs/sources_1/new/flop.v" \
+"../../../../pingpong2.srcs/sources_1/new/flopen.v" \
+"../../../../pingpong2.srcs/sources_1/new/flopenr.v" \
+"../../../../pingpong2.srcs/sources_1/new/memorycontrol.v" \
+"../../../../pingpong2.srcs/sources_1/new/mux2.v" \
+"../../../../pingpong2.srcs/sources_1/new/mux3.v" \
+"../../../../pingpong2.srcs/sources_1/new/mux4.v" \
+"../../../../pingpong2.srcs/sources_1/new/regfile.v" \
+"../../../../pingpong2.srcs/mySim/new/computer_t.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,7 +1,7 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Sun Jul  8 21:04:13 2018
+-- Date        : Mon Jul  9 00:10:55 2018
 -- Host        : voldemort-x running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim D:/pingpong2/pingpong2.srcs/sources_1/ip/ins_mem/ins_mem_sim_netlist.vhdl
 -- Design      : ins_mem
