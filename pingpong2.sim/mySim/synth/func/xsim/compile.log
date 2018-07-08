@@ -1,0 +1,19 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pingpong2/pingpong2.sim/mySim/synth/func/xsim/memorycontrol_t_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dat_mem
+INFO: [VRFC 10-311] analyzing module ins_mem
+INFO: [VRFC 10-311] analyzing module memorycontrol
+INFO: [VRFC 10-311] analyzing module dat_mem_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module dat_mem_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module dat_mem_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module dat_mem_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module dat_mem_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module dat_mem_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-311] analyzing module ins_mem_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module ins_mem_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module ins_mem_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-311] analyzing module ins_mem_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module ins_mem_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-311] analyzing module ins_mem_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/pingpong2/pingpong2.srcs/mySim/new/memorycontrol_t.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memorycontrol_t

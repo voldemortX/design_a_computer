@@ -1,7 +1,0 @@
-Running: xsim.dir/flop_t_behav/xsimk.exe -simmode gui -wdb flop_t_behav.wdb -simrunnum 0 -socket 25709
-Design successfully loaded
-Design Loading Memory Usage: 5080 KB (Peak: 5080 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 5664 KB (Peak: 5664 KB)
-Simulation CPU Usage: 15 ms

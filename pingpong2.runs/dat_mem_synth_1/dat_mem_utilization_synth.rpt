@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Jul  5 09:12:30 2018
+| Date         : Sun Jul  8 20:36:25 2018
 | Host         : voldemort-x running 64-bit major release  (build 9200)
 | Command      : report_utilization -file dat_mem_utilization_synth.rpt -pb dat_mem_utilization_synth.pb
 | Design       : dat_mem
