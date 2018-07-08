@@ -1,3 +1,5 @@
+// wire up everything
+
 module datapath #(parameter width = 32, bits = 5)(
     // concerning CU
     input[2: 0] ALUCon,
@@ -37,7 +39,9 @@ module datapath #(parameter width = 32, bits = 5)(
     
     // extension hardwares
     wire[width - 1: 0] Logic_extend, Sign_extend, PC_extend;
-    
+    assign Logic_extend = {{26{1'b0}}, IR_out[10: 6]};
+    assign Sign_extend = {{16{IR_out[15]}}, IR_out[15: 0]};
+    assign PC_extend = {PC_out[31: 26], IR_out[25: 0]};
     
     // registers & ALU
     flopenr #(width) PC(.clk(clk), .d(MUX_PCsrc_out), .q(PC_out), .en(PC_Pcen), .reset(reset));
