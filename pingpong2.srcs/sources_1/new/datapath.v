@@ -43,6 +43,7 @@ module datapath #(parameter width = 32, bits = 5)(
     assign PC_extend = {PC_out[31: 26], IR_out[25: 0]};
     assign Op = IR_out[31: 26];
     assign funct = IR_out[5: 0];
+    assign WriteData = B_out;
     
     // registers & ALU
     flopenr #(width) PC(.clk(clk), .d(MUX_PCsrc_out), .q(PC_out), .en(Pcen), .reset(reset));

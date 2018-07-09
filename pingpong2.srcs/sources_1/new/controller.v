@@ -10,8 +10,8 @@ module controller(
     );
     reg [3:0] state, nextstate;
     reg PCWC1,PCWC2,PCW;
-    parameter ADD = 6'b010100;
-    parameter OR = 6'b011001;
+    parameter ADD = 6'b100000;
+    parameter OR = 6'b100101;
     parameter SLL = 6'b000000;
     parameter SRL = 6'b000010;
     parameter JR = 6'b001000;
@@ -21,9 +21,9 @@ module controller(
     parameter BNE = 6'b000101;
     parameter BEQ = 6'b000100;
     parameter SW = 6'b101011;
-    parameter LW = 6'b010111;
+    parameter LW = 6'b100011;
     parameter J = 6'b000010;
-    parameter JAL = 6'b000010;
+    parameter JAL = 6'b000011;
     
     parameter FETCH = 4'b0000;
     parameter DECODE = 4'b0001;
@@ -165,8 +165,18 @@ module controller(
                 end
             JUMPCOM: 
                 begin
-                    PCW <= 1; 
-                    PCsrc <= 2'b01;
+                    PCW <= 1;
+                    RegDst <= 2'b10;
+                    Regsrc <= 2'b01;
+                    if(op != 6'b000000)  // jr 
+                    begin
+                        PCsrc <= 2'b01;
+                    end
+                    
+                    if(op == JAL)
+                    begin
+                        RegWrite <= 1;
+                    end
                 end
         endcase
     end

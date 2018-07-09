@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/computer_t_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Jul  9 10:00:57 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Jul  9 15:37:11 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2258646" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "3dd9f2b4143f5099addb6ecb77ea2be4" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "b5254c809de940d5877c7b07b112dcb7" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "17" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "40" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-6300HQ CPU @ 2.30GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "use
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "1 us" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "2 us" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "2" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.16_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "7324_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2467933740 -regid "" -xml D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/computer_t_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/computer_t_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/computer_t_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.12_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "7224_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1805654252 -regid "" -xml D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/computer_t_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/computer_t_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/pingpong2/pingpong2.sim/mySim/behav/xsim/xsim.dir/computer_t_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
