@@ -14,9 +14,10 @@ module computer #(parameter width = 32, bits = 5)(
     wire MEMR;
     wire MEMW;
     wire[31: 0] ReadData;
+    wire cpu_clk, locked;
     
     cpu #(32, 5) mips_cpu(
-        .clk(clk),
+        .clk(cpu_clk),
         .reset(reset),
         .ReadData(ReadData),
         .WriteData(WriteData),
@@ -37,5 +38,16 @@ module computer #(parameter width = 32, bits = 5)(
         .cs(cs),
         .digit(digit)
         );
+        
+    clk_wiz_0 instance_name
+       (
+        // Clock out ports
+        .cpu_clk(cpu_clk),     // output cpu_clk
+        // Status and control signals
+        .reset(reset), // input reset
+        .locked(locked),       // output locked
+       // Clock in ports
+        .clk(clk)  // input clk_in1
+        );      
         
 endmodule

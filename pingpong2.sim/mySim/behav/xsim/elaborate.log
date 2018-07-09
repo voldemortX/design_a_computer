@@ -1,6 +1,6 @@
 Vivado Simulator 2018.2
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: D:/sw/vivado_pro/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b5254c809de940d5877c7b07b112dcb7 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_1 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot computer_t_behav xil_defaultlib.computer_t xil_defaultlib.glbl -log elaborate.log 
+Running: D:/sw/vivado_pro/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto b5254c809de940d5877c7b07b112dcb7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot computer_t_behav xil_defaultlib.computer_t xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -29,6 +29,11 @@ Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
 Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
 Compiling module xil_defaultlib.ins_mem
 Compiling module xil_defaultlib.memorycontrol
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_wiz_0_clk_wiz
+Compiling module xil_defaultlib.clk_wiz_0
 Compiling module xil_defaultlib.computer
 Compiling module xil_defaultlib.computer_t
 Compiling module xil_defaultlib.glbl

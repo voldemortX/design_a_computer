@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1531061169">
+  <File Type="BITSTR-BMM" Name="computer_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="computer_power_routed.rpt"/>
   <File Type="PA-TCL" Name="computer.tcl"/>
-  <File Type="BITSTR-BMM" Name="computer_bd.bmm"/>
+  <File Type="OPT-DCP" Name="computer_opt.dcp"/>
   <File Type="ROUTE-PWR-SUM" Name="computer_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="computer_reports.tcl"/>
-  <File Type="OPT-DCP" Name="computer_opt.dcp"/>
   <File Type="OPT-DRC" Name="computer_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="computer.hwdef"/>
   <File Type="PWROPT-DCP" Name="computer_pwropt.dcp"/>
@@ -25,19 +25,20 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="computer_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="computer_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="computer_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="computer_drc_routed.rpx"/>
   <File Type="BITSTR-LTX" Name="computer.ltx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="computer_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="computer_drc_routed.rpx"/>
   <File Type="BITSTR-MMI" Name="computer.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="computer_methodology_drc_routed.rpt"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="computer_methodology_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="computer_methodology_drc_routed.pb"/>
   <File Type="BITSTR-SYSDEF" Name="computer.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="computer_methodology_drc_routed.pb"/>
   <File Type="ROUTE-PWR-RPX" Name="computer_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="computer_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="computer_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="computer_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="computer_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="computer_timing_summary_routed.rpx"/>
+  <File Type="RDI-RDI" Name="computer.vdi"/>
   <File Type="ROUTE-CLK" Name="computer_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="computer_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="computer_bus_skew_routed.pb"/>
@@ -48,7 +49,6 @@
   <File Type="BITSTR-RBT" Name="computer.rbt"/>
   <File Type="BITSTR-NKY" Name="computer.nky"/>
   <File Type="BG-DRC" Name="computer.drc"/>
-  <File Type="RDI-RDI" Name="computer.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

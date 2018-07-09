@@ -96,7 +96,7 @@ output wire [31 : 0] douta;
     .C_INIT_FILE_NAME("dat_mem.mif"),
     .C_INIT_FILE("dat_mem.mem"),
     .C_USE_DEFAULT_DATA(1),
-    .C_DEFAULT_DATA("1"),
+    .C_DEFAULT_DATA("0"),
     .C_HAS_RSTA(0),
     .C_RST_PRIORITY_A("CE"),
     .C_RSTRAM_A(0),
