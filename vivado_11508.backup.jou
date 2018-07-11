@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul  9 16:00:20 2018
+# Process ID: 11508
+# Current directory: F:/LDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8748 F:\LDR\LDR.xpr
+# Log file: F:/LDR/vivado.log
+# Journal file: F:/LDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/LDR/LDR.xpr
+update_compile_order -fileset sources_1
+launch_simulation -simset mySim
+open_wave_config F:/LDR/LDR.srcs/mySim/imports/pingpong2/imme_lw_Rtype.wcfg
+source computer_t.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+open_run synth_1 -name synth_1
+close_design
+set_property part xc7a35tcsg324-1 [current_project]
+update_ip_catalog
+reset_run dat_mem_synth_1
+reset_run ins_mem_synth_1
+reset_run clk_wiz_0_synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1

@@ -1,6 +1,0 @@
-0.6
-2018.2
-Jun 14 2018
-20:41:02
-D:/pingpong2/pingpong2.sim/mySim/synth/func/xsim/memorycontrol_t_func_synth.v,1531042676,verilog,,D:/pingpong2/pingpong2.srcs/mySim/new/memorycontrol_t.v,,dat_mem;dat_mem_blk_mem_gen_generic_cstr;dat_mem_blk_mem_gen_prim_width;dat_mem_blk_mem_gen_prim_wrapper_init;dat_mem_blk_mem_gen_top;dat_mem_blk_mem_gen_v8_4_1;dat_mem_blk_mem_gen_v8_4_1_synth;glbl;ins_mem;ins_mem_blk_mem_gen_generic_cstr;ins_mem_blk_mem_gen_prim_width;ins_mem_blk_mem_gen_prim_wrapper_init;ins_mem_blk_mem_gen_top;ins_mem_blk_mem_gen_v8_4_1;ins_mem_blk_mem_gen_v8_4_1_synth;memorycontrol,,,../../../../../pingpong2.srcs/sources_1/ip/clk_wiz_0,,,,,
-D:/pingpong2/pingpong2.srcs/mySim/new/memorycontrol_t.v,1531035463,verilog,,,,memorycontrol_t,,,../../../../../pingpong2.srcs/sources_1/ip/clk_wiz_0,,,,,

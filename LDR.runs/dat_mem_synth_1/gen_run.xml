@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="dat_mem_synth_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1531207507">
+  <File Type="PA-TCL" Name="dat_mem.tcl"/>
+  <File Type="REPORTS-TCL" Name="dat_mem_reports.tcl"/>
+  <File Type="RDS-RDS" Name="dat_mem.vds"/>
+  <File Type="RDS-UTIL" Name="dat_mem_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="dat_mem_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="dat_mem.dcp"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dat_mem">
+    <File Path="$PSRCDIR/sources_1/ip/dat_mem/dat_mem.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/ip/dat_mem/dat_mem.xci"/>
+        <Attr Name="ImportTime" Val="1531099958"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dat_mem"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/dat_mem">
+    <File Path="$PSRCDIR/sources_1/ip/dat_mem/dat_mem.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/ip/dat_mem/dat_mem.xci"/>
+        <Attr Name="ImportTime" Val="1531099958"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="dat_mem"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

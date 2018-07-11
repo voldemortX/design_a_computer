@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcsg324-1" LaunchTime="1531274052">
+  <File Type="BITSTR-BMM" Name="computer_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="computer_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="computer_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="computer_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="computer.tcl"/>
+  <File Type="OPT-TIMING" Name="computer_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="computer_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="computer_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="computer_reports.tcl"/>
+  <File Type="OPT-DRC" Name="computer_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="computer.hwdef"/>
+  <File Type="PWROPT-DCP" Name="computer_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="computer_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="computer_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="computer_placed.dcp"/>
+  <File Type="PLACE-IO" Name="computer_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="computer_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="computer_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="computer_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="computer_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="computer_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="computer_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="computer.bgn"/>
+  <File Type="PLACE-TIMING" Name="computer_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="computer_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="computer.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="computer_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="computer_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="computer_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="computer.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="computer_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="computer_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="computer_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="computer_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="computer_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="computer_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="computer.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="computer_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="computer.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="computer_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="computer_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="computer.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="computer_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="computer_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="computer_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="computer_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="computer_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="computer_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="computer_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="computer_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="computer_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="computer_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="computer_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="computer_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="computer_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="computer_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="computer_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="computer_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="computer_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="computer_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="computer_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="computer.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="computer_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="computer.rbt"/>
+  <File Type="BITSTR-NKY" Name="computer.nky"/>
+  <File Type="BG-DRC" Name="computer.drc"/>
+  <File Type="RDI-RDI" Name="computer.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/alu.v"/>
+        <Attr Name="ImportTime" Val="1531118499"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/controller.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/controller.v"/>
+        <Attr Name="ImportTime" Val="1531120737"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/cpu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/cpu.v"/>
+        <Attr Name="ImportTime" Val="1531059313"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/datapath.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/datapath.v"/>
+        <Attr Name="ImportTime" Val="1531121523"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flop.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/flop.v"/>
+        <Attr Name="ImportTime" Val="1530944155"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flopen.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/flopen.v"/>
+        <Attr Name="ImportTime" Val="1530944150"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/flopenr.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/flopenr.v"/>
+        <Attr Name="ImportTime" Val="1530944113"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/memorycontrol.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/memorycontrol.v"/>
+        <Attr Name="ImportTime" Val="1531055968"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux2.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/mux2.v"/>
+        <Attr Name="ImportTime" Val="1530936572"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/mux3.v"/>
+        <Attr Name="ImportTime" Val="1530938604"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/mux4.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/mux4.v"/>
+        <Attr Name="ImportTime" Val="1530938627"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/regfile.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/regfile.v"/>
+        <Attr Name="ImportTime" Val="1530787949"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/computer.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/new/computer.v"/>
+        <Attr Name="ImportTime" Val="1531101164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/ins_mem/test_rom.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/ip/ins_mem/test_rom.coe"/>
+        <Attr Name="ImportTime" Val="1531107030"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/dat_mem/test_ram.coe">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/sources_1/ip/dat_mem/test_ram.coe"/>
+        <Attr Name="ImportTime" Val="1531104664"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="computer"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/design201807041105.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../pingpong2/pingpong2/pingpong2.srcs/constrs_1/new/design201807041105.xdc"/>
+        <Attr Name="ImportTime" Val="1531061141"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/design201807041105.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dat_mem"/>
+  <BlockFileSet Type="BlockSrcs" Name="ins_mem"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>

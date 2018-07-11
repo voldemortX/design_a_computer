@@ -1,10 +1,10 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Jul  9 17:20:30 2018
-| Host         : voldemort-x running 64-bit major release  (build 9200)
+| Date         : Mon Jul  9 21:01:15 2018
+| Host         : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
-| Device       : xc7a35tcpg236-1
+| Device       : xc7a35tcsg324-1
 ------------------------------------------------------------------------------------
 
 Upgrade Log for IP 'ins_mem'
@@ -22,10 +22,10 @@ SUCCESS in the conversion of ins_mem (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 1)) to
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Jul  9 17:20:28 2018
-| Host         : voldemort-x running 64-bit major release  (build 9200)
+| Date         : Mon Jul  9 21:01:12 2018
+| Host         : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
-| Device       : xc7a35tcpg236-1
+| Device       : xc7a35tcsg324-1
 ------------------------------------------------------------------------------------
 
 Upgrade Log for IP 'dat_mem'
@@ -43,10 +43,10 @@ SUCCESS in the conversion of dat_mem (xilinx.com:ip:blk_mem_gen:8.4 (Rev. 1)) to
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Jul  9 17:20:24 2018
-| Host         : voldemort-x running 64-bit major release  (build 9200)
+| Date         : Mon Jul  9 21:01:06 2018
+| Host         : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
 | Command      : upgrade_ip
-| Device       : xc7a35tcpg236-1
+| Device       : xc7a35tcsg324-1
 ------------------------------------------------------------------------------------
 
 Upgrade Log for IP 'clk_wiz_0'

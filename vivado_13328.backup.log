@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul  9 20:58:06 2018
+# Process ID: 13328
+# Current directory: F:/LDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9320 F:\LDR\LDR.xpr
+# Log file: F:/LDR/vivado.log
+# Journal file: F:/LDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/LDR/LDR.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2018.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'dat_mem' is locked:
+* Current project part 'xc7a35tcsg324-1' and the part 'xc7a15tcpg236-1' used to customize the IP 'dat_mem' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'ins_mem' is locked:
+* Current project part 'xc7a35tcsg324-1' and the part 'xc7a15tcpg236-1' used to customize the IP 'ins_mem' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_wiz_0' is locked:
+* Current project part 'xc7a35tcsg324-1' and the part 'xc7a15tcpg236-1' used to customize the IP 'clk_wiz_0' do not match.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:16 . Memory (MB): peak = 832.012 ; gain = 140.676
+update_compile_order -fileset sources_1
+CRITICAL WARNING: [IP_Flow 19-4309] IP 'dat_mem' is locked, parameter file paths could not be changed. Please ensure the IP is unlocked and retry the SaveAs/Import operation.
+INFO: [Device 21-403] Loading part xc7a15tcpg236-1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+report_ip_status -name ip_status 
+upgrade_ip -srcset clk_wiz_0 [get_ips  {clk_wiz_0 dat_mem ins_mem}] -log ip_upgrade.log
+Upgrading 'clk_wiz_0'
+INFO: [Project 1-386] Moving file 'F:/LDR/LDR.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated clk_wiz_0 to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+Upgrading 'dat_mem'
+INFO: [Project 1-386] Moving file 'F:/LDR/LDR.srcs/sources_1/ip/dat_mem/dat_mem.xci' from fileset 'dat_mem' to fileset 'sources_1'.
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [IP_Flow 19-3420] Updated dat_mem to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dat_mem'...
+Upgrading 'ins_mem'
+INFO: [Project 1-386] Moving file 'F:/LDR/LDR.srcs/sources_1/ip/ins_mem/ins_mem.xci' from fileset 'ins_mem' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3420] Updated ins_mem to use current project options
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ins_mem'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'F:/LDR/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:28 ; elapsed = 00:00:22 . Memory (MB): peak = 1246.305 ; gain = 174.902
+export_ip_user_files -of_objects [get_ips {clk_wiz_0 dat_mem ins_mem}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ins_mem'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dat_mem'...
+[Mon Jul  9 21:01:48 2018] Launched ins_mem_synth_1, dat_mem_synth_1, clk_wiz_0_synth_1...
+Run output will be captured here:
+ins_mem_synth_1: F:/LDR/LDR.runs/ins_mem_synth_1/runme.log
+dat_mem_synth_1: F:/LDR/LDR.runs/dat_mem_synth_1/runme.log
+clk_wiz_0_synth_1: F:/LDR/LDR.runs/clk_wiz_0_synth_1/runme.log
+[Mon Jul  9 21:01:48 2018] Launched synth_1...
+Run output will be captured here: F:/LDR/LDR.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1246.305 ; gain = 0.000
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram.coe' provided. It will be converted relative to IP Instance files '../../../../LDR.srcs/sources_1/ip/dat_mem/test_ram.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/LDR/LDR.srcs/sources_1/ip/dat_mem/test_ram.coe' provided. It will be converted relative to IP Instance files '../../../../LDR.srcs/sources_1/ip/dat_mem/test_ram.coe'
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/LDR/LDR.srcs/sources_1/ip/ins_mem/test_rom.coe' provided. It will be converted relative to IP Instance files '../../../../LDR.srcs/sources_1/ip/ins_mem/test_rom.coe'
+INFO: [IP_Flow 19-3484] Absolute path of file 'f:/LDR/LDR.srcs/sources_1/ip/ins_mem/test_rom.coe' provided. It will be converted relative to IP Instance files '../../../../LDR.srcs/sources_1/ip/ins_mem/test_rom.coe'
+launch_runs impl_1 -jobs 2
+[Mon Jul  9 21:07:53 2018] Launched impl_1...
+Run output will be captured here: F:/LDR/LDR.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Mon Jul  9 21:10:15 2018] Launched impl_1...
+Run output will be captured here: F:/LDR/LDR.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at localhost.
+ Targets(s) ", jsn1jsn2" may be locked by another hw_server.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&3414ED49&0&1
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1929.285 ; gain = 666.496
+set_property PROGRAM.FILE {F:/LDR/LDR.runs/impl_1/computer.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/LDR/LDR.runs/impl_1/computer.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jul  9 21:28:30 2018...

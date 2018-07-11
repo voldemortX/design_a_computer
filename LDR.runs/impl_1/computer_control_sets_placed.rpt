@@ -1,0 +1,76 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Jul 11 09:59:23 2018
+| Host         : DESKTOP-3QG18OL running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file computer_control_sets_placed.rpt
+| Design       : computer
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    12 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|    16+ |           12 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             362 |           81 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             154 |           17 |
+| Yes          | No                    | No                     |              64 |           12 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              64 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+------------------------+---------------------------+------------------+----------------+
+|         Clock Signal        |      Enable Signal     |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
++-----------------------------+------------------------+---------------------------+------------------+----------------+
+|  mips_cpu/cu/nextstate__0   |                        |                           |                4 |             26 |
+|  instance_name/inst/cpu_clk |                        | mips_cpu/dp/PC/SR[0]      |                5 |             26 |
+|  mips_cpu/cu/led[15][0]     |                        |                           |                8 |             32 |
+|  mips_cpu/cu/digit2[7][0]   |                        |                           |                8 |             48 |
+|  n_0_161_BUFG               |                        |                           |               24 |             64 |
+|  n_1_35_BUFG                |                        |                           |               12 |             64 |
+|  instance_name/inst/cpu_clk |                        | mips_cpu/dp/IR/q_reg[0]_1 |                6 |             64 |
+|  instance_name/inst/cpu_clk |                        | mips_cpu/dp/IR/q_reg[0]_0 |                6 |             64 |
+|  instance_name/inst/cpu_clk | mips_cpu/cu/E[0]       | mips_cpu/dp/PC/SR[0]      |               19 |             64 |
+|  instance_name/inst/cpu_clk | mips_cpu/cu/out[0]     |                           |               12 |             64 |
+|  instance_name/inst/cpu_clk |                        |                           |               25 |            128 |
+|  instance_name/inst/cpu_clk | mips_cpu/cu/q_reg[1]_1 |                           |               12 |            192 |
++-----------------------------+------------------------+---------------------------+------------------+----------------+
+
+
