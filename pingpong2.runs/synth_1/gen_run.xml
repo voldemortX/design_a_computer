@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a15tcpg236-1" LaunchTime="1531061141">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1531273784">
   <File Type="PA-TCL" Name="computer.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="computer_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="computer_reports.tcl"/>
   <File Type="RDS-RDS" Name="computer.vds"/>
   <File Type="RDS-UTIL" Name="computer_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="computer_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="computer.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="computer_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="computer_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/alu.v">
@@ -99,13 +102,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/ins_mem/test_rom.coe">
+    <File Path="$PSRCDIR/sources_1/ip/dat_mem/test_ram.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/ip/dat_mem/test_ram.coe">
+    <File Path="$PSRCDIR/sources_1/ip/ins_mem/led_test.coe">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -135,4 +138,5 @@
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="dat_mem"/>
   <BlockFileSet Type="BlockSrcs" Name="ins_mem"/>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

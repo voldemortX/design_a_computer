@@ -2,22 +2,22 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Sun Jul  8 22:43:11 2018
-# Process ID: 17068
+# Start of session at: Wed Jul 11 09:51:23 2018
+# Process ID: 10360
 # Current directory: D:/pingpong2/pingpong2.runs/synth_1
 # Command line: vivado.exe -log computer.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source computer.tcl
 # Log file: D:/pingpong2/pingpong2.runs/synth_1/computer.vds
 # Journal file: D:/pingpong2/pingpong2.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source computer.tcl -notrace
-Command: synth_design -top computer -part xc7a15tcpg236-1
+Command: synth_design -top computer -part xc7a35tcpg236-1
 Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7a15t'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a15t'
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6316 
+INFO: Helper process launched with PID 19616 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 379.188 ; gain = 99.387
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 381.344 ; gain = 101.590
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'computer' [D:/pingpong2/pingpong2.srcs/sources_1/new/computer.v:1]
 	Parameter width bound to: 32 - type: integer 
@@ -54,14 +54,10 @@ INFO: [Synth 8-6155] done synthesizing module 'mux3__parameterized0' (7#1) [D:/p
 INFO: [Synth 8-6157] synthesizing module 'mux4' [D:/pingpong2/pingpong2.srcs/sources_1/new/mux4.v:1]
 	Parameter width bound to: 32 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'mux4' (8#1) [D:/pingpong2/pingpong2.srcs/sources_1/new/mux4.v:1]
-WARNING: [Synth 8-3848] Net funct in module/entity datapath does not have driver. [D:/pingpong2/pingpong2.srcs/sources_1/new/datapath.v:15]
-WARNING: [Synth 8-3848] Net Op in module/entity datapath does not have driver. [D:/pingpong2/pingpong2.srcs/sources_1/new/datapath.v:16]
-WARNING: [Synth 8-3848] Net WriteData in module/entity datapath does not have driver. [D:/pingpong2/pingpong2.srcs/sources_1/new/datapath.v:21]
-WARNING: [Synth 8-3848] Net PC_Pcen in module/entity datapath does not have driver. [D:/pingpong2/pingpong2.srcs/sources_1/new/datapath.v:31]
 INFO: [Synth 8-6155] done synthesizing module 'datapath' (9#1) [D:/pingpong2/pingpong2.srcs/sources_1/new/datapath.v:3]
 INFO: [Synth 8-6157] synthesizing module 'controller' [D:/pingpong2/pingpong2.srcs/sources_1/new/controller.v:2]
-	Parameter ADD bound to: 6'b010100 
-	Parameter OR bound to: 6'b011001 
+	Parameter ADD bound to: 6'b100000 
+	Parameter OR bound to: 6'b100101 
 	Parameter SLL bound to: 6'b000000 
 	Parameter SRL bound to: 6'b000010 
 	Parameter JR bound to: 6'b001000 
@@ -71,9 +67,9 @@ INFO: [Synth 8-6157] synthesizing module 'controller' [D:/pingpong2/pingpong2.sr
 	Parameter BNE bound to: 6'b000101 
 	Parameter BEQ bound to: 6'b000100 
 	Parameter SW bound to: 6'b101011 
-	Parameter LW bound to: 6'b010111 
+	Parameter LW bound to: 6'b100011 
 	Parameter J bound to: 6'b000010 
-	Parameter JAL bound to: 6'b000010 
+	Parameter JAL bound to: 6'b000011 
 	Parameter FETCH bound to: 4'b0000 
 	Parameter DECODE bound to: 4'b0001 
 	Parameter MEMACOM bound to: 4'b0010 
@@ -87,19 +83,20 @@ INFO: [Synth 8-6157] synthesizing module 'controller' [D:/pingpong2/pingpong2.sr
 	Parameter ICOM bound to: 4'b1010 
 	Parameter BRANCHCOM bound to: 4'b1011 
 	Parameter JUMPCOM bound to: 4'b1100 
-WARNING: [Synth 8-151] case item 6'b000010 is unreachable [D:/pingpong2/pingpong2.srcs/sources_1/new/controller.v:50]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/pingpong2/pingpong2.srcs/sources_1/new/controller.v:60]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/pingpong2/pingpong2.srcs/sources_1/new/controller.v:131]
 INFO: [Synth 8-155] case statement is not full and has no default [D:/pingpong2/pingpong2.srcs/sources_1/new/controller.v:93]
 INFO: [Synth 8-6155] done synthesizing module 'controller' (10#1) [D:/pingpong2/pingpong2.srcs/sources_1/new/controller.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'cpu' (11#1) [D:/pingpong2/pingpong2.srcs/sources_1/new/cpu.v:1]
 INFO: [Synth 8-6157] synthesizing module 'memorycontrol' [D:/pingpong2/pingpong2.srcs/sources_1/new/memorycontrol.v:3]
-INFO: [Synth 8-6157] synthesizing module 'dat_mem' [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-17068-voldemort-x/realtime/dat_mem_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'dat_mem' (12#1) [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-17068-voldemort-x/realtime/dat_mem_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'ins_mem' [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-17068-voldemort-x/realtime/ins_mem_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'ins_mem' (13#1) [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-17068-voldemort-x/realtime/ins_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'dat_mem' [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-10360-voldemort-x/realtime/dat_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dat_mem' (12#1) [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-10360-voldemort-x/realtime/dat_mem_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ins_mem' [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-10360-voldemort-x/realtime/ins_mem_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ins_mem' (13#1) [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-10360-voldemort-x/realtime/ins_mem_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'memorycontrol' (14#1) [D:/pingpong2/pingpong2.srcs/sources_1/new/memorycontrol.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'computer' (15#1) [D:/pingpong2/pingpong2.srcs/sources_1/new/computer.v:1]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-10360-voldemort-x/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (15#1) [D:/pingpong2/pingpong2.runs/synth_1/.Xil/Vivado-10360-voldemort-x/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'computer' (16#1) [D:/pingpong2/pingpong2.srcs/sources_1/new/computer.v:1]
 WARNING: [Synth 8-3331] design memorycontrol has unconnected port Address[31]
 WARNING: [Synth 8-3331] design memorycontrol has unconnected port Address[30]
 WARNING: [Synth 8-3331] design memorycontrol has unconnected port Address[29]
@@ -118,53 +115,8 @@ WARNING: [Synth 8-3331] design memorycontrol has unconnected port Address[17]
 WARNING: [Synth 8-3331] design memorycontrol has unconnected port Address[16]
 WARNING: [Synth 8-3331] design memorycontrol has unconnected port Address[15]
 WARNING: [Synth 8-3331] design memorycontrol has unconnected port Address[14]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[5]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[4]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[3]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[2]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[1]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[0]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[5]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[4]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[3]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[2]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[1]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[0]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[31]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[29]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[28]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[27]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[26]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[25]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[24]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[23]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[22]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[21]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[20]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[19]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[18]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[17]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[16]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[15]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[14]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[13]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[12]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[11]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[10]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[9]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[8]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[7]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[6]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[5]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[4]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[3]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[2]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[1]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[0]
-WARNING: [Synth 8-3331] design datapath has unconnected port Pcen
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 433.914 ; gain = 154.113
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 436.160 ; gain = 156.406
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -173,23 +125,24 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin PC:en to constant 0 [D:/pingpong2/pingpong2.srcs/sources_1/new/datapath.v:47]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 433.914 ; gain = 154.113
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 436.160 ; gain = 156.406
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 433.914 ; gain = 154.113
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 436.160 ; gain = 156.406
 ---------------------------------------------------------------------------------
-INFO: [Device 21-403] Loading part xc7a15tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/pingpong2/pingpong2.srcs/sources_1/ip/dat_mem/dat_mem/dat_mem_in_context.xdc] for cell 'mc/RAM'
 Finished Parsing XDC File [d:/pingpong2/pingpong2.srcs/sources_1/ip/dat_mem/dat_mem/dat_mem_in_context.xdc] for cell 'mc/RAM'
+Parsing XDC File [d:/pingpong2/pingpong2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
+Finished Parsing XDC File [d:/pingpong2/pingpong2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'instance_name'
 Parsing XDC File [d:/pingpong2/pingpong2.srcs/sources_1/ip/ins_mem/ins_mem/ins_mem_in_context.xdc] for cell 'mc/ROM'
 Finished Parsing XDC File [d:/pingpong2/pingpong2.srcs/sources_1/ip/ins_mem/ins_mem/ins_mem_in_context.xdc] for cell 'mc/ROM'
 Parsing XDC File [D:/pingpong2/pingpong2.srcs/constrs_1/new/design201807041105.xdc]
@@ -267,27 +220,33 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 757.266 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 768.637 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mc/RAM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'mc/ROM' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.266 ; gain = 477.465
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 768.637 ; gain = 488.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
-Loading part: xc7a15tcpg236-1
+Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.266 ; gain = 477.465
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 768.637 ; gain = 488.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  d:/pingpong2/pingpong2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  d:/pingpong2/pingpong2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for mc/RAM. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for instance_name. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for mc/ROM. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.266 ; gain = 477.465
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 768.637 ; gain = 488.883
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/pingpong2/pingpong2.srcs/sources_1/new/alu.v:9]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'controller'
+INFO: [Synth 8-5546] ROM "RegWrite" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ALUCon" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ALUCon" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "ALUCon" won't be mapped to RAM because it is too sparse
@@ -299,10 +258,8 @@ INFO: [Synth 8-5544] ROM "RegDst" won't be mapped to Block RAM because address s
 INFO: [Synth 8-5544] ROM "ALUsrcb" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "ALUsrca" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "Regsrc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "PCsrc" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "IRWrite" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "IorD" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5544] ROM "RegWrite" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "MEMW" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "MEMR" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
@@ -336,7 +293,7 @@ WARNING: [Synth 8-327] inferring latch for variable 'led_reg' [D:/pingpong2/ping
 WARNING: [Synth 8-327] inferring latch for variable 'cs_reg' [D:/pingpong2/pingpong2.srcs/sources_1/new/memorycontrol.v:97]
 WARNING: [Synth 8-327] inferring latch for variable 'digit_reg' [D:/pingpong2/pingpong2.srcs/sources_1/new/memorycontrol.v:98]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 757.266 ; gain = 477.465
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 768.637 ; gain = 488.883
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -361,7 +318,7 @@ Detailed RTL Component Info :
 	   8 Input     32 Bit        Muxes := 1     
 	   4 Input     32 Bit        Muxes := 4     
 	  13 Input     13 Bit        Muxes := 1     
-	  10 Input     13 Bit        Muxes := 1     
+	  11 Input     13 Bit        Muxes := 1     
 	   6 Input     13 Bit        Muxes := 1     
 	   3 Input     13 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 1     
@@ -374,7 +331,7 @@ Detailed RTL Component Info :
 	   8 Input      1 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 16    
 	   6 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 8     
 	   4 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
@@ -431,7 +388,7 @@ Module controller
 Detailed RTL Component Info : 
 +---Muxes : 
 	  13 Input     13 Bit        Muxes := 1     
-	  10 Input     13 Bit        Muxes := 1     
+	  11 Input     13 Bit        Muxes := 1     
 	   6 Input     13 Bit        Muxes := 1     
 	   3 Input     13 Bit        Muxes := 1     
 	  13 Input      4 Bit        Muxes := 1     
@@ -442,7 +399,7 @@ Detailed RTL Component Info :
 	  13 Input      2 Bit        Muxes := 4     
 	   2 Input      1 Bit        Muxes := 5     
 	   6 Input      1 Bit        Muxes := 1     
-	  10 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 1     
 	  13 Input      1 Bit        Muxes := 8     
 Module memorycontrol 
 Detailed RTL Component Info : 
@@ -457,8 +414,8 @@ Finished RTL Hierarchical Component Statistics
 Start Part Resource Summary
 ---------------------------------------------------------------------------------
 Part Resources:
-DSPs: 45 (col length:60)
-BRAMs: 50 (col length: RAMB18 60 RAMB36 30)
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
@@ -466,57 +423,10 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3936] Found unconnected internal register 'IR/q_reg' and it is trimmed from '32' to '26' bits. [D:/pingpong2/pingpong2.srcs/sources_1/new/flopen.v:7]
 INFO: [Synth 8-5546] ROM "nextstate" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "mc/cs_led" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[5]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[4]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[3]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[2]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[1]
-WARNING: [Synth 8-3331] design datapath has unconnected port funct[0]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[5]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[4]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[3]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[2]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[1]
-WARNING: [Synth 8-3331] design datapath has unconnected port Op[0]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[31]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[30]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[29]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[28]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[27]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[26]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[25]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[24]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[23]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[22]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[21]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[20]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[19]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[18]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[17]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[16]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[15]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[14]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[13]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[12]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[11]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[10]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[9]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[8]
-WARNING: [Synth 8-3331] design datapath has unconnected port WriteData[7]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3886] merging instance 'mips_cpu/cu/FSM_onehot_nextstate_reg[2]' (LD) to 'mips_cpu/cu/FSM_onehot_nextstate_reg[10]'
-INFO: [Synth 8-3886] merging instance 'mips_cpu/cu/FSM_onehot_nextstate_reg[3]' (LD) to 'mips_cpu/cu/FSM_onehot_nextstate_reg[10]'
-INFO: [Synth 8-3886] merging instance 'mips_cpu/cu/FSM_onehot_nextstate_reg[5]' (LD) to 'mips_cpu/cu/FSM_onehot_nextstate_reg[10]'
-INFO: [Synth 8-3886] merging instance 'mips_cpu/cu/FSM_onehot_nextstate_reg[6]' (LD) to 'mips_cpu/cu/FSM_onehot_nextstate_reg[10]'
-INFO: [Synth 8-3886] merging instance 'mips_cpu/cu/FSM_onehot_nextstate_reg[7]' (LD) to 'mips_cpu/cu/FSM_onehot_nextstate_reg[10]'
-INFO: [Synth 8-3886] merging instance 'mips_cpu/cu/FSM_onehot_nextstate_reg[9]' (LD) to 'mips_cpu/cu/FSM_onehot_nextstate_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mips_cpu/cu/FSM_onehot_nextstate_reg[10] )
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/cu/FSM_onehot_nextstate_reg[10]) is unused and will be removed from module computer.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:19 . Memory (MB): peak = 757.266 ; gain = 477.465
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 768.637 ; gain = 488.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -542,14 +452,16 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'instance_name/cpu_clk' to pin 'instance_name/bbstub_cpu_clk/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 760.543 ; gain = 480.742
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 768.637 ; gain = 488.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 761.141 ; gain = 481.340
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -574,68 +486,18 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[31]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[30]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[29]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[28]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[27]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[26]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[25]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[24]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[23]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[22]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[21]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[20]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[19]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[18]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[17]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[16]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[15]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[14]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[13]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[12]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[11]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[10]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[9]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[8]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[7]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[6]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[5]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[4]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[3]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[2]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[1]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mips_cpu/dp/PC/q_reg[0]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[15]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[14]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[13]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[12]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[11]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[10]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[9]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[8]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[7]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[6]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[5]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[4]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[3]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[2]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[1]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/led_reg[0]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/cs_reg[3]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/cs_reg[2]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/cs_reg[1]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/cs_reg[0]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[7]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[6]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[5]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[4]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[3]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[2]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[1]) is unused and will be removed from module computer.
-WARNING: [Synth 8-3332] Sequential element (mc/digit_reg[0]) is unused and will be removed from module computer.
+INFO: [Synth 8-3886] merging instance 'p_0_in[0]' (FDE) to 'mips_cpu/dp/IR/q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'p_0_in[1]' (FDE) to 'mips_cpu/dp/IR/q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'p_0_in[2]' (FDE) to 'mips_cpu/dp/IR/q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'p_0_in[3]' (FDE) to 'mips_cpu/dp/IR/q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'p_0_in[4]' (FDE) to 'mips_cpu/dp/IR/q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'p_1_in[0]' (FDE) to 'mips_cpu/dp/IR/q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'p_1_in[1]' (FDE) to 'mips_cpu/dp/IR/q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'p_1_in[2]' (FDE) to 'mips_cpu/dp/IR/q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'p_1_in[3]' (FDE) to 'mips_cpu/dp/IR/q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'p_1_in[4]' (FDE) to 'mips_cpu/dp/IR/q_reg[20]'
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -659,7 +521,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -672,7 +534,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -684,25 +546,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -712,71 +574,74 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |dat_mem       |         1|
-|2     |ins_mem       |         1|
+|1     |clk_wiz_0     |         1|
+|2     |dat_mem       |         1|
+|3     |ins_mem       |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+--------+------+
-|      |Cell    |Count |
-+------+--------+------+
-|1     |dat_mem |     1|
-|2     |ins_mem |     1|
-|3     |BUFG    |     3|
-|4     |CARRY4  |     8|
-|5     |LUT1    |     1|
-|6     |LUT2    |     5|
-|7     |LUT3    |    26|
-|8     |LUT4    |    81|
-|9     |LUT5    |    58|
-|10    |LUT6    |   140|
-|11    |RAM32M  |    12|
-|12    |FDRE    |   176|
-|13    |FDSE    |     1|
-|14    |LD      |    70|
-|15    |IBUF    |     6|
-|16    |OBUF    |    28|
-+------+--------+------+
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |clk_wiz_0 |     1|
+|2     |dat_mem   |     1|
+|3     |ins_mem   |     1|
+|4     |BUFG      |     2|
+|5     |CARRY4    |     8|
+|6     |LUT2      |    13|
+|7     |LUT3      |    16|
+|8     |LUT4      |    63|
+|9     |LUT5      |   130|
+|10    |LUT6      |   385|
+|11    |MUXF7     |    35|
+|12    |RAM32M    |    12|
+|13    |FDRE      |   204|
+|14    |FDSE      |     1|
+|15    |LD        |   105|
+|16    |IBUF      |     5|
+|17    |OBUF      |    28|
++------+----------+------+
 
 Report Instance Areas: 
 +------+----------------+--------------+------+
 |      |Instance        |Module        |Cells |
 +------+----------------+--------------+------+
-|1     |top             |              |   679|
+|1     |top             |              |  1073|
 |2     |  mc            |memorycontrol |   124|
-|3     |  mips_cpu      |cpu           |   508|
-|4     |    cu          |controller    |   244|
-|5     |    dp          |datapath      |   264|
-|6     |      A         |flop          |    37|
-|7     |      ALU       |alu           |    40|
-|8     |      ALUOut    |flop_0        |    70|
-|9     |      B         |flop_1        |    34|
-|10    |      IR        |flopen        |    39|
+|3     |  mips_cpu      |cpu           |   912|
+|4     |    cu          |controller    |   342|
+|5     |    dp          |datapath      |   570|
+|6     |      A         |flop          |   170|
+|7     |      ALU       |alu           |    49|
+|8     |      ALUOut    |flop_0        |    32|
+|9     |      B         |flop_1        |    37|
+|10    |      IR        |flopen        |   156|
 |11    |      MDR       |flop_2        |    32|
-|12    |      Registers |regfile       |    12|
+|12    |      PC        |flopenr       |    82|
+|13    |      Registers |regfile       |    12|
 +------+----------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 886.594 ; gain = 606.840
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 147 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:24 . Memory (MB): peak = 778.121 ; gain = 174.969
-Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 778.121 ; gain = 498.320
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:31 . Memory (MB): peak = 886.594 ; gain = 274.363
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 886.594 ; gain = 606.840
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 96 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 165 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 82 instances were transformed.
-  LD => LDCE: 70 instances
+  A total of 117 instances were transformed.
+  LD => LDCE: 105 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-82 Infos, 242 Warnings, 0 Critical Warnings and 0 Errors encountered.
+87 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:34 . Memory (MB): peak = 787.836 ; gain = 519.504
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 886.594 ; gain = 618.313
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'D:/pingpong2/pingpong2.runs/synth_1/computer.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file computer_utilization_synth.rpt -pb computer_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 787.836 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Jul  8 22:43:53 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 886.594 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jul 11 09:52:13 2018...

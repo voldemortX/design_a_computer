@@ -17,9 +17,11 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
-create_project -in_memory -part xc7a15tcpg236-1
+create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -52,7 +54,7 @@ set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir D:/pingpong
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
-synth_design -top ins_mem -part xc7a15tcpg236-1 -mode out_of_context
+synth_design -top ins_mem -part xc7a35tcpg236-1 -mode out_of_context
 
 #---------------------------------------------------------
 # Generate Checkpoint/Stub/Simulation Files For IP Cache

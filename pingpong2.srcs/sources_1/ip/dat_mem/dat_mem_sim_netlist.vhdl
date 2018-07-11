@@ -1,13 +1,13 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
--- Date        : Mon Jul  9 10:53:02 2018
+-- Date        : Mon Jul  9 17:24:08 2018
 -- Host        : voldemort-x running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim D:/pingpong2/pingpong2.srcs/sources_1/ip/dat_mem/dat_mem_sim_netlist.vhdl
 -- Design      : dat_mem
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7a15tcpg236-1
+-- Device      : xc7a35tcpg236-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -64,7 +64,7 @@ begin
       INITP_0D => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0E => X"0000000000000000000000000000000000000000000000000000000000000000",
       INITP_0F => X"0000000000000000000000000000000000000000000000000000000000000000",
-      INIT_00 => X"0000000000000000000000000000000000000000000000000000000055555555",
+      INIT_00 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_01 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_02 => X"0000000000000000000000000000000000000000000000000000000000000000",
       INIT_03 => X"0000000000000000000000000000000000000000000000000000000000000000",
@@ -534,11 +534,11 @@ entity dat_mem_blk_mem_gen_v8_4_1 is
   attribute C_INIT_FILE : string;
   attribute C_INIT_FILE of dat_mem_blk_mem_gen_v8_4_1 : entity is "dat_mem.mem";
   attribute C_INIT_FILE_NAME : string;
-  attribute C_INIT_FILE_NAME of dat_mem_blk_mem_gen_v8_4_1 : entity is "dat_mem.mif";
+  attribute C_INIT_FILE_NAME of dat_mem_blk_mem_gen_v8_4_1 : entity is "no_coe_file_loaded";
   attribute C_INTERFACE_TYPE : integer;
   attribute C_INTERFACE_TYPE of dat_mem_blk_mem_gen_v8_4_1 : entity is 0;
   attribute C_LOAD_INIT_FILE : integer;
-  attribute C_LOAD_INIT_FILE of dat_mem_blk_mem_gen_v8_4_1 : entity is 1;
+  attribute C_LOAD_INIT_FILE of dat_mem_blk_mem_gen_v8_4_1 : entity is 0;
   attribute C_MEM_TYPE : integer;
   attribute C_MEM_TYPE of dat_mem_blk_mem_gen_v8_4_1 : entity is 0;
   attribute C_MUX_PIPELINE_STAGES : integer;
@@ -855,11 +855,11 @@ architecture STRUCTURE of dat_mem is
   attribute C_INIT_FILE : string;
   attribute C_INIT_FILE of U0 : label is "dat_mem.mem";
   attribute C_INIT_FILE_NAME : string;
-  attribute C_INIT_FILE_NAME of U0 : label is "dat_mem.mif";
+  attribute C_INIT_FILE_NAME of U0 : label is "no_coe_file_loaded";
   attribute C_INTERFACE_TYPE : integer;
   attribute C_INTERFACE_TYPE of U0 : label is 0;
   attribute C_LOAD_INIT_FILE : integer;
-  attribute C_LOAD_INIT_FILE of U0 : label is 1;
+  attribute C_LOAD_INIT_FILE of U0 : label is 0;
   attribute C_MEM_TYPE : integer;
   attribute C_MEM_TYPE of U0 : label is 0;
   attribute C_MUX_PIPELINE_STAGES : integer;

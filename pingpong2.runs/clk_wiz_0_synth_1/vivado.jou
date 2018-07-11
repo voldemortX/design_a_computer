@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Mon Jul  9 09:49:55 2018
-# Process ID: 13888
+# Start of session at: Mon Jul  9 17:22:53 2018
+# Process ID: 2280
 # Current directory: D:/pingpong2/pingpong2.runs/clk_wiz_0_synth_1
 # Command line: vivado.exe -log clk_wiz_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source clk_wiz_0.tcl
 # Log file: D:/pingpong2/pingpong2.runs/clk_wiz_0_synth_1/clk_wiz_0.vds

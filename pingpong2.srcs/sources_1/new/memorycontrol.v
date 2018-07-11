@@ -86,7 +86,7 @@ module memorycontrol(
     begin
         if(en_keys)
         begin
-            ReadData <= {{27{1'b0}}, keys[3: 2], {1'b0}, keys[1: 0]};
+            ReadData <= {{27{1'b0}}, keys[3: 2], {1'b0}, keys[1: 0]};  // nxp
         end
         else if(en_led)
         begin

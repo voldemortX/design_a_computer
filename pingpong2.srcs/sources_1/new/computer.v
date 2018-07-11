@@ -44,7 +44,7 @@ module computer #(parameter width = 32, bits = 5)(
         // Clock out ports
         .cpu_clk(cpu_clk),     // output cpu_clk
         // Status and control signals
-        .reset(reset), // input reset
+        .reset(1'b0), // input reset
         .locked(locked),       // output locked
        // Clock in ports
         .clk(clk)  // input clk_in1
